@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#403f3f</color>
+    <color name="font_color">#ffffff</color>
+  <!--  <color name="colorPrimary">#282828</color>-->
+    <color name="colorPrimary">#c97000</color>
+    <color name="colorPrimaryDark">#c97000</color>
+    <color name="button">#79a532</color>
+    <color name="theme_50">#eceff1</color>
+    <color name="theme_100">#5acfd8dc</color>
+    <color name="theme_200">#b0bec5</color>
+    <color name="theme_300">#90a4ae</color>
+    <color name="theme_400">#b23815</color>
+    <color name="theme_500">#b23815</color>
+    <color name="theme_600">#b23815</color>
+    <color name="theme_700">#b23815</color>
+    <color name="theme_800">#e9000000</color>
+    <color name="theme_900">#263238</color>
+    <color name="theme_9001">#f6f6f6</color>
+    <color name="theme_back">#d7d3d3</color>
+    <color name="theme_back1">#eeeeee</color>
+    <color name="colorPrimaryDark1">#8ed5d5d6</color>
+    <color name="checkout">#79a532</color>
+    <color name="red">#d70707</color>
+
+
+</resources>

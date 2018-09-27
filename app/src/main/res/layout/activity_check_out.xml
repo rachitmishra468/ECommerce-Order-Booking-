@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_parent_rounded_corner"
+    android:orientation="vertical"
+    tools:context="com.uk.restaurant.GreenVich.activity_fragments.CheckOut">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/header" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/small_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:typeface="sans"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/small_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quantity"
+                android:typeface="sans"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/small_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price"
+                android:typeface="sans"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/small_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="20dp">
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/check_out_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_price"
+                    android:textColor="@color/white"
+                    android:typeface="sans"
+                    android:textSize="14dp"
+                    android:id="@+id/textView6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/txt_total_price_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:text="@string/total_price"
+                    android:typeface="sans"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+
+
+
+
+            <TextView
+                android:text="Cancel Order"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+
+                android:ems="10"
+                android:typeface="normal"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="3dp"
+                android:elevation="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:background="@drawable/backgroundcheckout"
+                android:padding="5dp"
+                android:id="@+id/btn_cancel_order_check"
+                />
+            <!--  <Button
+                  android:id="@+id/btn_cancel_order_check"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/bg_parent_rounded_corner"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp"
+                  android:text="Cancel Order"
+                  android:textColor="@color/blue"
+                  android:textSize="@dimen/small_size" />-->
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:background="@drawable/backgroundcheckout"
+                android:ems="10"
+                android:text="Next"
+                android:typeface="normal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:elevation="10dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_shop_status_check"
+                 />
+            <!--<Button
+                android:id="@+id/btn_shop_status_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_parent_rounded_corner"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Check out"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/small_size" />-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <include layout="@layout/footer_layout" />
+    </LinearLayout>
+</LinearLayout>

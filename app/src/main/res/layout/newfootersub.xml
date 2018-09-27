@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorPrimaryDark"
+    android:paddingTop="5dp"
+    android:weightSum="6">
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:clickable="false"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+  <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:clickable="false"
+            android:src="@drawable/menu_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/menu"
+            android:visibility="gone"
+            android:textColor="@color/font_color"
+            android:textSize="@dimen/small_size" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_about_us"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/about_us_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/about_us"
+            android:gravity="left"
+            android:layout_marginRight="2dp"
+            android:textColor="@color/font_color"
+            android:textSize="@dimen/small_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_contact_us"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/contact_us"
+            android:gravity="right"
+            android:textColor="@color/font_color"
+            android:textSize="@dimen/small_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_find_on_map"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+     <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/login"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/logintext"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/find"
+            android:textColor="@color/font_color"
+            android:textSize="@dimen/small_size" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="4"
+        android:visibility="visible"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/ll_check"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/backgroundcheckout"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/llcheck_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/check_out"
+                    android:layout_margin="3dp"
+                    android:elevation="4dp"
+                    android:typeface="serif"
+                    android:id="@+id/price"
+                    android:textStyle="normal"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+                <ImageView
+                    android:id="@+id/img_check_out"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="3dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/carts" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_item_quantity"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignRight="@+id/llcheck_out"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginRight="-15dp"
+                android:layout_marginTop="-3dp"
+                android:padding="0dp"
+                android:text="0"
+                android:textSize="12dp"
+                android:gravity="center_horizontal"
+                android:layout_alignTop="@+id/llcheck_out"
+                android:background="@drawable/texview_design"
+                android:textStyle="normal"
+              />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_check_out"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:background="@drawable/backgroundcheckout"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Checkout"
+            android:textStyle="normal"
+            android:typeface="normal"
+            android:elevation="5dp"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </LinearLayout>
+</LinearLayout>

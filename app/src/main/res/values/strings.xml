@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">Green Vich</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="offer_content"> Free delivery in NSP</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="spinner_title">Select Category</string>
+    <string name="app_font">Email ID</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!--Strings Related To Contact US-->
+    <string name="phone_no">ORDER ONLINE or CALL 9999663941</string>
+    <string name="locality">34 Denmark St, Bedford MK40 3TQ</string>
+    <string name="zip_code">MK40 3TQ</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="check_out">Check Out</string>
+    <string name="item_list">Item List</string>
+    <string name="sub_category">Sub Category</string>
+    <!--Comman Strings-->
+    <string name="home">Home</string>
+    <string name="about">About us</string>
+    <string name="menu">Menu</string>
+    <string name="deal">Deal</string>
+    <string name="contact">Contact</string>
+    <string name="contact_us">Call</string>
+    <string name="find">Login</string>
+    <string name="location">Location</string>
+    <string name="about_us12">The Perfect Local Pizza Delivered To Your Door!</string>
+    <string name="about_us">About us</string>
+    <!--<string name="about_us">Reservation</string>-->
+    <string name="date" formatted="false">Date &amp; Time *</string>
+    <string name="our_history">Our History</string>
+    <string name="about1">G-9, PLOT NO.C-9,PEARL BEST HEIGHTS-II NETAJI SUBHASH PLACE,PITAM PURA,NEW DELHI-110034"</string>
+    <string name="about2">Come to Rishi\'s to experience the native best of both north and south Indian delicacies, and allow us to take you on a journey through our extensive menu. Experience our specialities and a host of traditional deserts. We also have a party hall available for hire.</string>
+<string name="about3">We are 100% committed to making sure your time with us is memorable, and your meal is nothing short of PERFECT.\n
+    “Delivery or Pick-up it’s all good with us.”
+</string>
+    <string name="total_price">Total Price</string>
+    <string name="count">Count</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="welcome_to_payment">Welcome To Payment</string>
+    <string name="amount">Amount</string>
+    <string name="discount">Discount</string>
+    <string name="delivery_charge">Delivery Charge</string>
+    <string name="net_payable">Net Payable</string>
+    <string name="type">Type</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="online">Online</string>
+    <string name="delivery">Delivery</string>
+    <string name="collect">Collection</string>
+    <string name="delivery_info">Please fill the information to delivery your food</string>
+    <string name="continue_order">Continue</string>
+    <string name="delivery_details">Delivery Details</string>
+    <string name="delivery_detail">Order Type</string>
+    <string name="cash_on_delivery">Cash On Delivery</string>
+    <string name="pay_online">Pay Online</string>
+    <string name="full_name">Full name</string>
+    <string name="email_id">Email id</string>
+    <string name="contact_no">Contact no</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="house">House</string>
+    <string name="street_hint">Street</string>
+    <string name="city">City</string>
+    <string name="post_code">Pin code</string>
+    <string name="submit">Submit</string>
+    <string name="name">Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="deal_text">There is no any deal right now</string>
+    <string name="price">Price</string>
+    <string name="cocking_tips">Any Other cooking Instruction</string>
+    <string name="add_to_basket">Add to Basket</string>
+    <string name="no_item_found">No ItemFound</string>
+    <string name="topping_name">Topping Name</string>
+    <string name="base">Selelect base</string>
+    <string name="select_first_pizza">Select first pizza</string>
+    <string name="select_second_pizza">Select second pizza</string>
+    <string name="select_first_pasta">Select first pasta</string>
+    <string name="select_second_pasta">Select second pasta</string>
+    <string name="select_topings">Select toppings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="personal_info">Personal Information</string>
+    <string name="user_registration"> USER REGISTRATION </string>
+    <string name="if_not_registered"> IF NOT REGISTERED</string>
+    <string name="hint_name">Full Name</string>
+    <string name="hint_email">Email ID</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_sign_up">Login</string>
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter the password</string>
+    <!--Common Strings of The App-->
+    <string name="order_review">""</string>
+
+    <string-array name="quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+
+    <string name="code">Enter  PinCode..</string>
+
+
+    <string-array name="websites_array">
+        <item>Yahoo</item>
+        <item>Hotmail</item>
+        <item>Gmail</item>
+        <item>Facebook</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="Occasion">
+        <item>BIRTHDAY</item>
+        <item>ANNIVERSARY</item>
+        <item>CORPORATE</item>
+        <item>OTHER</item>
+    </string-array>
+    <string-array name="Preferred">
+        <item>BUFFET</item>
+        <item>A LA CARTE</item>
+        <item>DESSERT LOUNGE</item>
+    </string-array>
+    <string name="title_activity_demomap">Map</string>
+</resources>

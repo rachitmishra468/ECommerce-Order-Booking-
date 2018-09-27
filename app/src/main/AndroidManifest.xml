@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.uk.restaurant.GreenVich">
+
+    <permission
+        android:name="com.uk.restaurant.GreenVich.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".utill.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity_fragments.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity_fragments.CheckOut"
+            android:label="@string/check_out"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_fragments.AddToCart"
+            android:label="@string/add_to_cart"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_fragments.DeliveryOption"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_fragments.DeliveryDetailAddress"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_fragments.OrderReviewPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_fragments.PayMentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_fragments.AboutUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_fragments.Menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_fragments.RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_fragments.LogIn"
+            android:screenOrientation="portrait" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/app_icon" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/button" />
+        <activity
+            android:name=".activity_fragments.TiffinBookingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_fragments.SplashActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+
+        <activity
+            android:name=".activity_fragments.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".activity_fragments.NotificationActivity">
+
+        </activity>
+
+        <activity android:name="com.uk.restaurant.GreenVich.MainActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+
+        <service android:name=".service.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".service.MyFirebaseInstanceIDService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

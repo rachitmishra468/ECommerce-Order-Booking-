@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "173155170748",
+    "firebase_url": "https://green-vich-172305.firebaseio.com",
+    "project_id": "green-vich-172305",
+    "storage_bucket": "green-vich-172305.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173155170748:android:b69ea9a393a4c979",
+        "android_client_info": {
+          "package_name": "com.uk.restaurant.GreenVich"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173155170748-7afm10k452stsnqfn6a3pom89k986ja2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uk.restaurant.GreenVich",
+            "certificate_hash": "236c032d92018a699a3998450b78ef529960d425"
+          }
+        },
+        {
+          "client_id": "173155170748-g2havtpt79p9duus06j8boia3khtbq0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDml69R60SNV6EEFqrWPtn3LoUQGz4yvsc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173155170748-g2havtpt79p9duus06j8boia3khtbq0s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,90 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ll_req_a_quote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="@dimen/size_10">
+                    <ScrollView android:id="@+id/textAreaScroller"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scrollbars="vertical">
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <com.android.volley.toolbox.NetworkImageView
+                                android:id="@+id/profilePic"
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="100dp"
+                                android:scaleType="fitCenter" >
+                            </com.android.volley.toolbox.NetworkImageView>
+
+
+                            <TextView
+                            android:id="@+id/message"
+                            android:layout_width="match_parent"
+                            android:textSize="14dp"
+                            android:scrollbars="vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/fbedittext"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/fbedittext"
+                            android:layout_marginTop="22dp"
+                            android:text="" />
+                        </LinearLayout>
+                    </ScrollView>
+
+                  <!--  <TextView
+                        android:id="@+id/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/size_10"
+                        android:hint=""
+                        android:typeface="serif"
+                        android:elevation="10dp"
+                        android:lines="2"
+                        android:textColor="@color/black"/>-->
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,191 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+   >
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/header" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_req_a_quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <!-- Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10">
+
+            <EditText
+                android:id="@+id/book_userfull_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_parent_rounded_corner"
+                android:padding="@dimen/size_10"
+                android:typeface="serif"
+                android:elevation="10dp"
+                android:hint="Name"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10">
+
+            <EditText
+                android:id="@+id/book_userfull_Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_parent_rounded_corner"
+                android:padding="@dimen/size_10"
+                android:typeface="serif"
+                android:elevation="10dp"
+                android:hint="Address"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <!--Email Id-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10">
+            <EditText
+                android:id="@+id/book_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_parent_rounded_corner"
+                android:padding="@dimen/size_10"
+                android:typeface="serif"
+                android:elevation="10dp"
+                android:inputType="textEmailAddress"
+                android:hint="Email Id"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <!-- Phone No -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10">
+
+            <EditText
+                android:id="@+id/book_user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_parent_rounded_corner"
+                android:padding="@dimen/size_10"
+                android:inputType="phone"
+                android:elevation="10dp"
+                android:typeface="serif"
+                android:hint="Phone Number"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+       <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+           android:typeface="sans"
+            android:text="Select Tiffin Service:"
+            android:layout_marginBottom="5dp"/>
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:textAlignment="center"
+            android:background="@color/theme_300"
+            android:prompt="@string/spinner_title"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_parent_rounded_corner"
+                android:padding="@dimen/size_10"
+                android:hint=""
+                android:typeface="serif"
+                android:elevation="10dp"
+                android:lines="2"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10">
+            <EditText
+                android:id="@+id/instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_parent_rounded_corner"
+                android:padding="@dimen/size_10"
+                android:hint="Special Instruction"
+                android:typeface="serif"
+                android:elevation="10dp"
+                android:lines="3"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <!-- Submit -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp">
+            <Button
+                android:id="@+id/service_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:elevation="10dp"
+                android:textColor="@color/white"
+                android:background="@color/checkout"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- Response Message -->
+    <LinearLayout
+        android:id="@+id/ll_req_a_quote_response"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/txt_req_a_quote_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thanks"/>
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

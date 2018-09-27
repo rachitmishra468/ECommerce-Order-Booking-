@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_custom_layout"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <!--  <ImageButton
+          android:id="@+id/ib_close"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/add_item"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentRight="true"
+          android:background="@null"
+          />-->
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a sample popup window."
+
+        android:padding="25sp"
+        android:textColor="@color/black"
+        />
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_password"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_marginTop="100dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/black"
+            android:textColorHint="@color/button"
+            android:textColor="@color/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter OTP *" />
+
+    </android.support.design.widget.TextInputLayout>
+   <!-- <EditText
+        android:id="@+id/otp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:hint="Enter OTP *"
+        android:inputType="number"
+        android:layout_height="wrap_content" />-->
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/pasword"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/pas"
+            android:layout_marginTop="100dp"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/button"
+            android:textColor="@color/button"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Password *" />
+
+    </android.support.design.widget.TextInputLayout>
+   <!-- <EditText
+        android:id="@+id/pas"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="10dp"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:hint="New Password *"
+        android:layout_height="wrap_content" />-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/conpastewxt"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/conpas"
+            android:layout_marginTop="100dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/black"
+            android:textColorHint="@color/button"
+            android:textColor="@color/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Password *" />
+
+    </android.support.design.widget.TextInputLayout>
+   <!-- <EditText
+        android:id="@+id/conpas"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="10dp"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:hint="Confirm Password *"
+        android:layout_height="wrap_content" />-->
+
+</LinearLayout>
